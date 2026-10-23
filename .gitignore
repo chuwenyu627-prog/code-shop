@@ -1,0 +1,23 @@
+# Codex and temporary build artifacts
+.codex/
+
+# Unrelated generated presentation and slide exports
+*.pptx
+*.pptx.inspect.ndjson
+高中物理必修重点公式知识点/
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Local environment and editor settings
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

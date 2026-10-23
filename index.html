@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="山止川行 · 当代中式料理餐厅" />
+    <title>山止川行 · 当代中式料理</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="山止川行首页">
+        <span class="brand-mark">山</span>
+        <span>山止川行</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
+      <nav class="nav" id="siteNav" aria-label="主导航">
+        <a href="#menu">菜单</a>
+        <a href="#story">关于我们</a>
+        <a href="#visit">到店指南</a>
+      </nav>
+      <a class="header-booking" href="#booking">立即订座 <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">CONTEMPORARY CHINESE DINING · SHANGHAI</p>
+          <h1>一席山水<br /><em>入味人间</em></h1>
+          <p class="hero-copy">从时令山鲜到海味江河，我们以当代手法，重述一餐一饭里的东方风土。</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#booking">预订餐桌 <span>↗</span></a>
+            <a class="text-link" href="#menu">探索本季菜单 <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-side-note"><span>01</span> SEASONAL TASTES</div>
+        <div class="hero-scroll">SCROLL TO EXPLORE <span></span></div>
+      </section>
+
+      <section class="intro section-pad" id="story">
+        <p class="section-label">OUR PHILOSOPHY / 01</p>
+        <div class="intro-grid">
+          <h2>顺应四时，<br />把自然端上餐桌。</h2>
+          <div class="intro-text">
+            <p>山止川行相信，最好的味道始终来自土地本身。我们走访各地，寻找正当季的食材，让每一份鲜活都在恰好的时刻抵达餐桌。</p>
+            <a class="text-link dark" href="#visit">认识山止川行 <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-dish">
+        <div class="dish-photo"></div>
+        <div class="dish-card">
+          <p class="section-label">SIGNATURE / 02</p>
+          <p class="dish-number">01 — 03</p>
+          <h2>花雕熟醉<br />六月黄</h2>
+          <p>应时而食的江南风物。以十年陈花雕慢浸，蟹膏丰腴，酒香温润，留住秋天最初的一口鲜。</p>
+          <a class="circle-link" href="#menu" aria-label="查看所有招牌菜">↗</a>
+        </div>
+      </section>
+
+      <section class="menu section-pad" id="menu">
+        <div class="menu-heading">
+          <div><p class="section-label">SEASONAL MENU / 03</p><h2>本季风味</h2></div>
+          <a class="text-link dark" href="#booking">查看完整菜单 <span>↗</span></a>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-item menu-one"><div class="menu-image"></div><div class="menu-detail"><span>冷盘</span><div class="dish-title"><h3>脆皮乳鸽</h3><strong>¥68</strong></div><p>云南玫瑰 · 陈皮</p></div></article>
+          <article class="menu-item menu-two"><div class="menu-image"></div><div class="menu-detail"><span>热菜</span><div class="dish-title"><h3>黑松露文昌鸡</h3><strong>¥128</strong></div><p>黑松露 · 鸡油菌</p></div></article>
+          <article class="menu-item menu-three"><div class="menu-image" style="background-image:url('https://cdn-ak.f.st-hatena.com/images/fotolife/j/juei/20251101/20251101211715.jpg')"></div><div class="menu-detail"><span>主食</span><div class="dish-title"><h3>鲜虾蟹粉拌面</h3><strong>¥98</strong></div><p>阳澄湖蟹粉 · 手工细面</p></div></article>
+        </div>
+      </section>
+
+      <section class="booking" id="booking">
+        <div class="booking-inner">
+          <p class="section-label">RESERVATION / 04</p>
+          <h2>为美好的一餐<br />留一张桌子。</h2>
+          <form class="booking-form" id="bookingForm">
+            <label>用餐日期<input id="reservationDate" type="date" required /></label>
+            <label>用餐人数<select required><option value="">请选择</option><option>2 位</option><option>4 位</option><option>6 位</option><option>8 位及以上</option></select></label>
+            <button type="submit">查询空位 <span>↗</span></button>
+          </form>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="visit">
+      <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">山</span><span>山止川行</span></a><p>一味一境，皆是相逢。</p></div>
+      <div class="footer-grid"><div><p class="footer-label">地址</p><p>上海市静安区愚园路 168 号<br />2F, No.168 Yuyuan Road</p></div><div><p class="footer-label">营业时间</p><p>午餐 11:30 — 14:00<br />晚餐 17:30 — 22:00</p></div><div><p class="footer-label">联系我们</p><p>021 6288 2026<br />hello@shanzhichuanxing.com</p></div><div class="social"><a href="#top">微信</a><a href="#top">小红书</a><a href="#top">微博</a></div></div>
+      <div class="footer-bottom"><span>© 2026 SHAN ZHI CHUAN XING</span><span>沪ICP备 20260000号</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
